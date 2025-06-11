@@ -10,7 +10,7 @@ from pathlib import Path
 app = Flask(__name__)
 
 # Set the directory where Jekyll files are located
-JEKYLL_DIR = Path(__file__).parent / "bitdev-el-salvador.github.io"
+JEKYLL_DIR = Path(__file__).parent
 
 @app.route('/')
 def index():

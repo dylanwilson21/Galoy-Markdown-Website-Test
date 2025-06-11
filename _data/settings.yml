@@ -1,0 +1,7 @@
+title: "Galoy"
+tagline: "Simple, open-source Bitcoin banking infrastructure for communities and businesses worldwide."
+
+menu:
+  - { name: "About Us", url: "/about" }
+  - { name: "Products", url: "/products" }
+  - { name: "FAQ", url: "/faq" }
