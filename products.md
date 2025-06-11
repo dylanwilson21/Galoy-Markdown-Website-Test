@@ -5,59 +5,86 @@ title: Products
 
 # Our Products
 
-Galoy offers a comprehensive suite of open-source Bitcoin banking infrastructure products designed to make Bitcoin adoption simple and accessible for communities and businesses worldwide.
+Galoy provides banking software solutions designed to empower innovative organizations in leveraging the full potential of Bitcoin and other digital assets. Our product suite is modular, allowing enterprises to build scalable and secure applications for the evolving financial landscape.
 
-## Galoy Core
+## Core Product Offerings
 
-Our flagship banking platform that provides everything you need to run a Bitcoin-native financial institution.
+### Lana: Bitcoin Loans Platform
 
-### Features
-- **Multi-currency wallets** - Support for Bitcoin on-chain and Lightning Network
-- **Real-time payments** - Instant Lightning Network transactions
-- **User management** - Complete account and permission systems
-- **Transaction history** - Detailed records and reporting
-- **Mobile apps** - Ready-to-deploy iOS and Android applications
-- **Admin dashboard** - Complete administrative interface
+Lana is a specialized application enabling banks and financial institutions to offer digital asset-backed loan products. As the demand for borrowing against Bitcoin grows, Lana provides a compelling solution for institutions to meet this need, offering a lower-risk, high-return lending option.
 
-### Use Cases
-- Community banks
-- Local Bitcoin economies
-- Business payment processing
-- Remittance services
+**Key Features:**
+- Digital asset-backed lending
+- Risk management tools
+- Automated loan processing
+- Compliance-ready infrastructure
 
-## Lightning Network Infrastructure
+### Bria: Bitcoin Payments Hub
 
-Complete Lightning Network node management and liquidity solutions.
+Bria serves as a robust Bitcoin payments hub, facilitating secure and scalable on-chain Bitcoin and Lightning Network transactions. It optimizes transaction batching for enhanced security and efficiency.
 
-### What's Included
-- **Automated node management** - Simplified Lightning node deployment and maintenance
-- **Channel management** - Intelligent channel opening and closing
-- **Liquidity services** - Automated liquidity management
-- **Routing optimization** - Advanced payment routing algorithms
+**Perfect for:**
+- Accepting Bitcoin payments
+- Managing internal transfers
+- Providing customers with advanced digital asset account solutions
+- Preparing for the future of payments
 
-### Benefits
-- Reduced operational complexity
-- Lower transaction costs
-- Improved payment reliability
-- Scalable infrastructure
+**Features:**
+- On-chain Bitcoin transactions
+- Lightning Network integration
+- Transaction batching optimization
+- Enhanced security protocols
 
-## Developer Tools
+### Cala: Bitcoin-Native Core Ledger
 
-APIs and SDKs that make it easy to integrate Bitcoin payments into any application.
+Cala is a powerful, Bitcoin-native double-entry accounting ledger designed for enterprise financial applications. It offers a modern solution for building financial products, whether they are exclusively Bitcoin-focused or integrate various fiat and cryptocurrencies.
 
-### Available Tools
-- **REST APIs** - Complete programmatic access to all banking functions
-- **GraphQL APIs** - Flexible query interface for modern applications
-- **Webhooks** - Real-time notifications for payments and events
-- **SDKs** - Libraries for popular programming languages
-- **Documentation** - Comprehensive guides and examples
+**Ideal for:**
+- Greenfield digital asset projects
+- Flexible core banking platforms
+- Budget-friendly enterprise solutions
+- Multi-currency financial applications
 
-### Integration Options
-- E-commerce platforms
+### Stablesats: Stablecoin-like Experience, Without the Token
+
+Stablesats is an innovative hedging engine that enables the creation of Bitcoin-native stable balances, effectively synthetic USD. It achieves stability through the use of derivatives contracts, specifically the perpetual inverse swap.
+
+**Benefits:**
+- Simple, efficient, Bitcoin-only stability
+- No token dependency
+- Derivatives-based hedging
+- Synthetic USD creation
+
+## Wallets & Web Applications
+
+Galoy offers a suite of user-friendly tools aimed at making Bitcoin simple, safe, and reliable for everyday use.
+
+### Blink Mobile Bitcoin Wallet
+
+Our flagship consumer application, refined over four years of development and widely recognized as a popular Lightning wallet.
+
+**Features:**
+- Lightning Network native
+- Simple and intuitive interface
+- Proven reliability and security
+- Four years of continuous development
+- Popular choice among Bitcoin users
+
+### Web-based Bitcoin Point-of-Sale
+
+A comprehensive web application designed specifically for merchants and retail environments.
+
+**Perfect for:**
+- Retail merchants
 - Point-of-sale systems
-- Mobile applications
-- Web applications
-- Enterprise systems
+- Receive-only applications
+- Business payment acceptance
+
+**Features:**
+- Authentication capabilities
+- Merchant-friendly interface
+- Reliable payment processing
+- Web-based accessibility
 
 ## Hosted Solutions
 

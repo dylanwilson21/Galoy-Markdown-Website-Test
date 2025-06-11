@@ -1,0 +1,12 @@
+Galoy provides banking software solutions designed to empower innovative organizations in leveraging the full potential of Bitcoin and other digital assets. Their product suite is modular, allowing enterprises to build scalable and secure applications for the evolving financial landscape. Galoy's offerings cater to institutions looking to integrate Bitcoin-native functionalities into their existing operations or launch new greenfield financial products.
+Core Product Offerings:
+Lana: Bitcoin Loans Platform
+Lana is a specialized application enabling banks and financial institutions to offer digital asset-backed loan products. As the demand for borrowing against Bitcoin grows, Lana provides a compelling solution for institutions to meet this need, offering a lower-risk, high-return lending option.
+Bria: Bitcoin Payments Hub
+Bria serves as a robust Bitcoin payments hub, facilitating secure and scalable on-chain Bitcoin and Lightning Network transactions. It optimizes transaction batching for enhanced security and efficiency. Bria is ideal for institutions seeking to accept payments, manage internal transfers, or provide customers with advanced digital asset account solutions, preparing them for the future of payments.
+Cala: Bitcoin-Native Core Ledger
+Cala is a powerful, Bitcoin-native double-entry accounting ledger designed for enterprise financial applications. It offers a modern solution for building financial products, whether they are exclusively Bitcoin-focused or integrate various fiat and cryptocurrencies. Cala is particularly suited for greenfield digital asset projects that require a flexible and budget-friendly core banking platform.
+Stablesats: Stablecoin-like Experience, Without the Token
+Stablesats is an innovative hedging engine that enables the creation of Bitcoin-native stable balances, effectively synthetic USD. It achieves stability through the use of derivatives contracts, specifically the perpetual inverse swap, providing a simple, efficient, and Bitcoin-only method for maintaining stable value.
+Wallets & Web Apps
+Galoy offers a suite of user-friendly tools aimed at making Bitcoin simple, safe, and reliable. This includes the widely used blink-mobile Bitcoin wallet, which has been refined over four years and is a popular Lightning wallet. Additionally, they provide a web-based Bitcoin point-of-sale application with authentication capabilities, perfectly suited for merchants and retail use cases as a receive-only application.

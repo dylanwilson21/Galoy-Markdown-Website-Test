@@ -8,29 +8,30 @@ title: FAQ
 ## General Questions
 
 ### What is Galoy?
-Galoy is an open-source Bitcoin banking infrastructure platform that enables communities and businesses to build their own Bitcoin-native financial services. We provide the tools and infrastructure needed to create wallets, process payments, and manage Bitcoin operations at scale.
+Galoy provides banking software solutions designed to empower innovative organizations in leveraging the full potential of Bitcoin and other digital assets. Our modular product suite allows enterprises to build scalable and secure applications for the evolving financial landscape.
 
 ### Who can use Galoy?
 Galoy is designed for:
-- Communities wanting to create local Bitcoin economies
-- Businesses needing Bitcoin payment infrastructure
-- Developers building Bitcoin-integrated applications
-- Financial institutions exploring Bitcoin services
-- Organizations in emerging markets seeking financial inclusion solutions
+- Banks and financial institutions seeking Bitcoin integration
+- Enterprises building digital asset products
+- Organizations offering Bitcoin-backed lending services
+- Businesses needing robust Bitcoin payment infrastructure
+- Developers creating Bitcoin-native financial applications
+- Institutions requiring enterprise-grade Bitcoin solutions
 
 ### Is Galoy really open source?
 Yes, absolutely. All of our core code is available on GitHub under open-source licenses. You can inspect, modify, and contribute to the codebase. We believe transparency is essential for financial infrastructure.
 
 ## Technical Questions
 
-### What Bitcoin features does Galoy support?
-Galoy supports:
-- Bitcoin on-chain transactions
-- Lightning Network payments
-- Multi-signature wallets
-- Hardware wallet integration
-- Real-time payment processing
-- Transaction batching and optimization
+### What products does Galoy offer?
+Galoy's core products include:
+- **Lana**: Bitcoin loans platform for digital asset-backed lending
+- **Bria**: Bitcoin payments hub with Lightning Network integration
+- **Cala**: Bitcoin-native double-entry accounting ledger
+- **Stablesats**: Hedging engine for Bitcoin-native stable balances
+- **Blink Wallet**: Popular Lightning-native mobile Bitcoin wallet
+- **Point-of-Sale**: Web-based Bitcoin payment application for merchants
 
 ### Do I need to be a Bitcoin expert to use Galoy?
 No. Galoy is designed to handle the technical complexity of Bitcoin operations while providing simple interfaces for end users. However, some technical knowledge is helpful for deployment and customization.
@@ -45,12 +46,13 @@ Galoy is built using:
 - Docker for containerization
 
 ### Can I integrate Galoy with existing systems?
-Yes. Galoy provides comprehensive APIs (REST and GraphQL) that allow integration with:
-- Existing banking systems
+Yes. Galoy's modular architecture allows seamless integration with:
+- Existing banking infrastructure
+- Enterprise financial systems
 - E-commerce platforms
-- Point-of-sale systems
-- Accounting software
-- Custom applications
+- Accounting and compliance systems
+- Custom applications and workflows
+- Multi-currency financial products
 
 ## Deployment Questions
 

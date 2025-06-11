@@ -13,7 +13,7 @@ We're building the financial infrastructure for a Bitcoin-native world. Our goal
 
 ## Our Story
 
-Founded by Bitcoin enthusiasts and developers, Galoy emerged from the recognition that while Bitcoin is revolutionary, the infrastructure to use it in everyday commerce was still too complex for most people and communities. We set out to change that by creating simple, reliable, and open-source tools that anyone can use.
+Founded by Bitcoin enthusiasts and developers, Galoy emerged from the recognition that while Bitcoin is revolutionary, the infrastructure needed for enterprise adoption was still too complex for most organizations. We set out to change that by creating modular, enterprise-ready solutions that allow institutions to leverage Bitcoin's full potential without the technical complexity.
 
 ## What We Believe
 
