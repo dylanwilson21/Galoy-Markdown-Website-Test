@@ -2,7 +2,7 @@ modules = ["python-3.11", "postgresql-16", "ruby"]
 
 [nix]
 channel = "stable-24_05"
-packages = ["openssl", "postgresql", "rsync", "ruby", "bundler"]
+packages = ["bundler", "openssl", "postgresql", "rsync", "ruby"]
 
 [deployment]
 deploymentTarget = "autoscale"

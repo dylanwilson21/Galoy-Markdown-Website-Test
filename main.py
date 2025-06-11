@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """
-Simple static file server for the Galoy Jekyll website
+Simple static file server for the Galoy Jekyll website with markdown processing
 """
 import os
 import mimetypes
-from flask import Flask, send_from_directory, abort
+import markdown
+import frontmatter
+from flask import Flask, send_from_directory, abort, render_template_string
 from pathlib import Path
 
 app = Flask(__name__)
@@ -36,62 +38,68 @@ def serve_file(filename):
             }
             
             if filename.rstrip('/') in md_files:
-                # For development, we'll serve a simple HTML version
+                # Process markdown files with proper Jekyll-like rendering
                 md_file = JEKYLL_DIR / md_files[filename.rstrip('/')]
                 if md_file.exists():
-                    with open(md_file, 'r') as f:
-                        content = f.read()
+                    # Parse the markdown file with frontmatter
+                    with open(md_file, 'r', encoding='utf-8') as f:
+                        post = frontmatter.load(f)
                     
-                    # Basic markdown to HTML conversion for demo
-                    html_content = f"""
-                    <!DOCTYPE html>
-                    <html>
-                    <head>
-                        <title>Galoy - {filename.title()}</title>
-                        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-                        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-                        <link rel="stylesheet" href="/assets/css/style.css">
-                        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-                    </head>
-                    <body>
-                        <div class="Site">
-                            <header class="Header">
-                                <div class="Header-inner">
-                                    <div class="Header-logo">
-                                        <a href="/">Galoy</a>
-                                    </div>
-                                    <nav class="Header-nav">
-                                        <a href="/about">About Us</a>
-                                        <a href="/products">Products</a>
-                                        <a href="/faq">FAQ</a>
-                                    </nav>
-                                </div>
-                                <div class="Header-border">
-                                    ==============================================================================================================================================================
-                                </div>
-                            </header>
-                            
-                            <div class="content">
-                                <pre style="white-space: pre-wrap; font-family: 'Source Code Pro', monospace; line-height: 1.6;">{content}</pre>
-                            </div>
-                            
-                            <footer class="Footer">
-                                <div class="Footer-border">
-                                    ==============================================================================================================================================================
-                                </div>
-                                <div class="Footer-inner">
-                                    <div class="Footer-source">
-                                        <a href="https://github.com/GaloyMoney" target="_blank" rel="noopener nofollow">Source available on Github</a>
-                                    </div>
-                                    <div class="Footer-contact">
-                                        <a href="mailto:hello@galoy.io">Contact Us</a>
-                                    </div>
-                                </div>
-                            </footer>
-                        </div>
-                    </body>
-                    </html>
-                    """
+                    # Convert markdown to HTML
+                    md = markdown.Markdown(extensions=['extra', 'codehilite', 'toc'])
+                    content_html = md.convert(post.content)
+                    
+                    # Get the page title
+                    page_title = post.metadata.get('title', filename.title())
+                    
+                    # Generate the full HTML page
+                    html_content = f"""<!DOCTYPE html>
+<html>
+<head>
+    <title>{page_title} | Galoy</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+</head>
+<body>
+    <div class="Site">
+        <header class="Header">
+            <div class="Header-inner">
+                <div class="Header-logo">
+                    <a href="/">Galoy</a>
+                </div>
+                <nav class="Header-nav">
+                    <a href="/about">About Us</a>
+                    <a href="/products">Products</a>
+                    <a href="/faq">FAQ</a>
+                </nav>
+            </div>
+            <div class="Header-border">
+                ==============================================================================================================================================================
+            </div>
+        </header>
+        
+        <div class="content">
+            {content_html}
+        </div>
+        
+        <footer class="Footer">
+            <div class="Footer-border">
+                ==============================================================================================================================================================
+            </div>
+            <div class="Footer-inner">
+                <div class="Footer-source">
+                    <a href="https://github.com/GaloyMoney" target="_blank" rel="noopener nofollow">Source available on Github</a>
+                </div>
+                <div class="Footer-contact">
+                    <a href="mailto:hello@galoy.io">Contact Us</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>"""
                     return html_content
         
         # Serve regular files
