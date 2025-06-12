@@ -16,8 +16,75 @@ JEKYLL_DIR = Path(__file__).parent
 
 @app.route('/')
 def index():
-    """Serve the index.html file"""
-    return send_from_directory(JEKYLL_DIR, 'index.html')
+    """Serve the index.html file with proper header"""
+    try:
+        # Read the index.html file
+        index_file = JEKYLL_DIR / 'index.html'
+        if index_file.exists():
+            with open(index_file, 'r', encoding='utf-8') as f:
+                post = frontmatter.load(f)
+            
+            # Get the page title
+            page_title = post.metadata.get('title', 'Home')
+            
+            # Generate the full HTML page with navigation
+            html_content = f"""<!DOCTYPE html>
+<html>
+<head>
+    <title>{page_title} | Galoy</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+</head>
+<body>
+    <div class="Site">
+        <header class="Header">
+            <div class="Header-inner">
+                <div class="Header-logo">
+                    <a href="/">Galoy</a>
+                </div>
+                <div class="Header-nav-container">
+                    <nav class="Header-nav">
+                        <a href="/about">About Us</a>
+                        <a href="/products">Products</a>
+                        <a href="/faq">FAQ</a>
+                    </nav>
+                    <nav class="Header-social">
+                        <a href="https://github.com/GaloyMoney" target="_blank" rel="noopener nofollow">GitHub</a>
+                        <a href="https://docs.galoy.io" target="_blank" rel="noopener nofollow">Documentation</a>
+                        <a href="mailto:hello@galoy.io">Contact</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="Header-border">
+                ==============================================================================================================================================================
+            </div>
+        </header>
+        
+        {post.content}
+        
+        <footer class="Footer">
+            <div class="Footer-border">
+                ==============================================================================================================================================================
+            </div>
+            <div class="Footer-inner">
+                <div class="Footer-source">
+                    <a href="https://github.com/GaloyMoney" target="_blank" rel="noopener nofollow">Source available on Github</a>
+                </div>
+                <div class="Footer-contact">
+                    <a href="mailto:hello@galoy.io">Contact Us</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>"""
+            return html_content
+        else:
+            abort(404)
+    except Exception:
+        abort(404)
 
 @app.route('/<path:filename>')
 def serve_file(filename):
