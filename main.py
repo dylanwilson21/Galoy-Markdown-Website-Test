@@ -69,11 +69,18 @@ def serve_file(filename):
                 <div class="Header-logo">
                     <a href="/">Galoy</a>
                 </div>
-                <nav class="Header-nav">
-                    <a href="/about">About Us</a>
-                    <a href="/products">Products</a>
-                    <a href="/faq">FAQ</a>
-                </nav>
+                <div class="Header-nav-container">
+                    <nav class="Header-nav">
+                        <a href="/about">About Us</a>
+                        <a href="/products">Products</a>
+                        <a href="/faq">FAQ</a>
+                    </nav>
+                    <nav class="Header-social">
+                        <a href="https://github.com/GaloyMoney" target="_blank" rel="noopener nofollow">GitHub</a>
+                        <a href="https://docs.galoy.io" target="_blank" rel="noopener nofollow">Documentation</a>
+                        <a href="mailto:hello@galoy.io">Contact</a>
+                    </nav>
+                </div>
             </div>
             <div class="Header-border">
                 ==============================================================================================================================================================

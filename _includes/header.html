@@ -3,17 +3,26 @@
     <div class="Header-logo">
       <a href="{{ site.github.url }}/">{{ site.data.settings.title }}</a>
     </div>
-    <nav class="Header-nav">
-      {% for item in site.data.settings.menu %}
-        {% if item.external %}
-        <a href="{{ item.url }}" target="_blank" rel="noopener nofollow">
-            {{ item.name }}
-        </a>
-        {% else %}
-          <a href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a>
-        {% endif %}
-      {% endfor %}
-    </nav>
+    <div class="Header-nav-container">
+      <nav class="Header-nav">
+        {% for item in site.data.settings.menu %}
+          {% if item.external %}
+          <a href="{{ item.url }}" target="_blank" rel="noopener nofollow">
+              {{ item.name }}
+          </a>
+          {% else %}
+            <a href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a>
+          {% endif %}
+        {% endfor %}
+      </nav>
+      <nav class="Header-social">
+        {% for item in site.data.settings.social %}
+          <a href="{{ item.url }}" {% if item.external %}target="_blank" rel="noopener nofollow"{% endif %}>
+              {{ item.name }}
+          </a>
+        {% endfor %}
+      </nav>
+    </div>
   </div>
   <div class="Header-border">
     ==============================================================================================================================================================

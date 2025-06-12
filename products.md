@@ -9,51 +9,34 @@ Galoy provides banking software solutions designed to empower innovative organiz
 
 ## Core Product Offerings
 
-### Lana: Bitcoin Loans Platform
+### Bitcoin-Backed Lending Platform
 
-Lana is a specialized application enabling banks and financial institutions to offer digital asset-backed loan products. As the demand for borrowing against Bitcoin grows, Lana provides a compelling solution for institutions to meet this need, offering a lower-risk, high-return lending option.
+A comprehensive solution for financial institutions to offer digital asset-backed loan products. As demand for borrowing against Bitcoin grows, our lending platform provides a compelling, lower-risk, high-return option for institutions.
 
-**Key Features:**
-- Digital asset-backed lending
-- Risk management tools
-- Automated loan processing
-- Compliance-ready infrastructure
+| Feature | Description |
+|---------|-------------|
+| Digital Asset Collateral | Secure Bitcoin-backed lending with automated collateral management |
+| Risk Management | Advanced risk assessment tools and real-time monitoring |
+| Automated Processing | Streamlined loan origination and servicing workflows |
+| Compliance Ready | Built-in regulatory compliance and reporting capabilities |
 
-### Bria: Bitcoin Payments Hub
+### Full Core Banking Stack
 
-Bria serves as a robust Bitcoin payments hub, facilitating secure and scalable on-chain Bitcoin and Lightning Network transactions. It optimizes transaction batching for enhanced security and efficiency.
+A complete Bitcoin-native banking infrastructure that combines payments, accounting, and stability features into one integrated platform.
 
-**Perfect for:**
-- Accepting Bitcoin payments
-- Managing internal transfers
-- Providing customers with advanced digital asset account solutions
-- Preparing for the future of payments
+| Component | Purpose |
+|-----------|---------|
+| **Bria Payment Hub** | Secure Bitcoin and Lightning Network transaction processing |
+| **Cala Core Ledger** | Double-entry accounting system for enterprise financial applications |
+| **Stablesats Engine** | Bitcoin-native stable balances using derivatives contracts |
+| **Mobile & Web Apps** | Ready-to-deploy consumer and merchant applications |
 
-**Features:**
-- On-chain Bitcoin transactions
-- Lightning Network integration
-- Transaction batching optimization
-- Enhanced security protocols
+#### Key Capabilities
 
-### Cala: Bitcoin-Native Core Ledger
-
-Cala is a powerful, Bitcoin-native double-entry accounting ledger designed for enterprise financial applications. It offers a modern solution for building financial products, whether they are exclusively Bitcoin-focused or integrate various fiat and cryptocurrencies.
-
-**Ideal for:**
-- Greenfield digital asset projects
-- Flexible core banking platforms
-- Budget-friendly enterprise solutions
-- Multi-currency financial applications
-
-### Stablesats: Stablecoin-like Experience, Without the Token
-
-Stablesats is an innovative hedging engine that enables the creation of Bitcoin-native stable balances, effectively synthetic USD. It achieves stability through the use of derivatives contracts, specifically the perpetual inverse swap.
-
-**Benefits:**
-- Simple, efficient, Bitcoin-only stability
-- No token dependency
-- Derivatives-based hedging
-- Synthetic USD creation
+• **Payment Processing**: On-chain Bitcoin and Lightning Network transactions with optimized batching  
+• **Enterprise Accounting**: Modern double-entry ledger supporting Bitcoin and multi-currency operations  
+• **Stability Solutions**: Synthetic USD creation through perpetual inverse swap contracts  
+• **User Applications**: Proven mobile wallet and point-of-sale solutions
 
 ## Wallets & Web Applications
 

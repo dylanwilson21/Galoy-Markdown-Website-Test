@@ -38,8 +38,9 @@
   &-feature {
     text-align: center;
     padding: 1.5rem;
-    border: 1px solid #eee;
+    border: 1px solid $border-color;
     border-radius: 8px;
+    background-color: $secondary-bg;
 
     h3 {
       font-size: 1.3rem;
@@ -50,6 +51,7 @@
 
     p {
       line-height: 1.5;
+      color: $font-color;
     }
   }
 

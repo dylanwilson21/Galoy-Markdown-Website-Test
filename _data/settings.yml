@@ -5,3 +5,8 @@ menu:
   - { name: "About Us", url: "/about" }
   - { name: "Products", url: "/products" }
   - { name: "FAQ", url: "/faq" }
+
+social:
+  - { name: "GitHub", url: "https://github.com/GaloyMoney", external: true }
+  - { name: "Documentation", url: "https://docs.galoy.io", external: true }
+  - { name: "Contact", url: "mailto:hello@galoy.io", external: true }
